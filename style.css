@@ -8,9 +8,39 @@
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: hsl(210, 46%, 95%)
 }
 
 .main-container {
-  max-width: 1150px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 5% 3%;
+  display: flex;
+}
+
+.main-container .left {
+  flex-basis: 70%;
+}
+.main-container .right {
+  flex-basis: 30%;
+}
+
+.testimonial-1 {
+  /* background-color:  */
+}
+.testimonial-2 {
+  
+}
+.testimonial-3 {
+  
+}
+.testimonial-4 {
+  
+}
+.testimonial-5 {
+  
+}
+
+.testimonial-box {
+  padding: 15px;
 }
