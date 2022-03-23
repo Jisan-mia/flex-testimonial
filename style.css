@@ -8,8 +8,24 @@
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  background-color: hsl(210, 46%, 95%)
+  background-color: hsl(210, 46%, 95%);
 }
+
+/* to center the body */
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* top style is to center the body */
 
 .img-res {
   width: 100%;
@@ -22,7 +38,7 @@ body {
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5% 3%;
+  padding: 4% 3%;
   display: flex;
   gap: 1.5rem;
 }
@@ -47,6 +63,8 @@ body {
 }
 .main-container .right {
   flex-basis: 25%;
+  align-self: stretch;
+  display: flex;
 }
 
 .testimonial-1 {
@@ -73,9 +91,48 @@ body {
   padding: 18px 25px;
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .testimonial-box .img-cont {
   height: 35px;
   width: 35px;
 }
+.testimonial-box .profile {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 0.7rem
+}
+.testimonial-box .profile .name {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+.testimonial-box .profile .designation {
+  font-size: 12px;
+  color: hsl(0, 0%, 81%);
+  font-weight: 500;
+}
+.testimonial-5 .profile .name, .testimonial-3 .profile .name, .testimonial-5 h1.title ,.testimonial-3 h1.title  {
+  color: black
+}
+
+.testimonial-box .title {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.testimonial-box .desc {
+  color: hsl(0, 0%, 81%);
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
